@@ -17,7 +17,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.itcourses.grusha.hometask.url.nazar.Main</mainClass>
+                            <mainClass>com.itcourses.summer.shared.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
