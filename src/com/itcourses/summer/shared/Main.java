@@ -35,5 +35,7 @@ public class Main {
         System.out.println( ""+firstNumber+"+"+secondNumber+"="+(firstNumber+secondNumber));
     }
 
-
+    public static void divide (int firstNumber, int secondNumber) {
+        System.out.println("" + firstNumber + "/" + secondNumber + "=" + (firstNumber/secondNumber));
+    }
 }
