@@ -9,12 +9,14 @@ public class Main {
         }
         int firstNumber = Integer.parseInt(args[1]);
         int secondNumber = Integer.parseInt(args[2]);
+        int result;
         switch (args[0].toLowerCase()){
             case "add" : break;
             case "divide" : break;
             case "multiply" : break;
             case "subtract" :
-                subtract(firstNumber, secondNumber);
+                result = subtract(firstNumber, secondNumber);
+                System.out.println(""+firstNumber+"-"+secondNumber+"="+result);
                 break;
             default:
                 System.out.println("Unknown command");
@@ -23,6 +25,6 @@ public class Main {
     }
 
     public static void subtract(int firstNumber, int secondNumber) {
-        System.out.println(""+firstNumber+"-"+secondNumber+"="+(firstNumber-secondNumber)); }
+        return (firstNumber-secondNumber); }
 
 }
