@@ -12,7 +12,10 @@ public class Main {
         int result;
         switch (args[0].toLowerCase()){
             case "add" : break;
-            case "divide" : break;
+            case "divide" :
+                result = division(firstNumber, secondNumber);
+                System.out.println("" + firstNumber + "/" + secondNumber + "=" + result);
+                break;
             case "multiply" :
                 result = multiply(firstNumber, secondNumber);
                 System.out.println(""+firstNumber+"-"+secondNumber+"="+result);
@@ -32,5 +35,9 @@ public class Main {
 
     public static int multiply(int firstNumber, int secondNumber) {
         return (firstNumber*secondNumber); }
+
+        public static int division(int firstNumber, int secondNumber){
+        return (firstNumber/secondNumber);
+        }
 
 }
