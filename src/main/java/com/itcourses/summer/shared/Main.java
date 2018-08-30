@@ -30,7 +30,7 @@ public class Main {
 
     }
 
-//new comment + smth
+//new comment and smth and smth
     public static int subtract(int firstNumber, int secondNumber) {
         return (firstNumber-secondNumber); }
 
