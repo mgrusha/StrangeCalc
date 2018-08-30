@@ -3,7 +3,7 @@ package mainpackage;
 public class Main {
 
     public static void main(String[] args) {
-        args = new String[]{"subtract","23","13"};
+        //args = new String[]{"subtract","23","13"};
         if (args.length!=3){
             System.out.println("Wrong number of paramters");
         }
@@ -13,7 +13,10 @@ public class Main {
         switch (args[0].toLowerCase()){
             case "add" : break;
             case "divide" : break;
-            case "multiply" : break;
+            case "multiply" :
+                result = multiply(firstNumber, secondNumber);
+                System.out.println(""+firstNumber+"-"+secondNumber+"="+result);
+                break;
             case "subtract" :
                 result = subtract(firstNumber, secondNumber);
                 System.out.println(""+firstNumber+"-"+secondNumber+"="+result);
@@ -24,7 +27,10 @@ public class Main {
 
     }
 
-    public static void subtract(int firstNumber, int secondNumber) {
+    public static int subtract(int firstNumber, int secondNumber) {
         return (firstNumber-secondNumber); }
+
+    public static int multiply(int firstNumber, int secondNumber) {
+        return (firstNumber*secondNumber); }
 
 }
